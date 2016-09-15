@@ -7,3 +7,6 @@
 [submodule "bbb-r2rdac"]
 	path = bbb-r2rdac
 	url = git@github.com:/mattvenn/bbb-r2rdac
+[submodule "capture"]
+	path = capture
+	url = git@github.com:/mattvenn/capture
