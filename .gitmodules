@@ -1,12 +1,12 @@
 [submodule "hit-proc"]
 	path = hit-proc
-	url = git@github.com:/mattvenn/hit-proc
+	url = git@github.com:mattvenn/hit-proc
 [submodule "fpga-adc"]
 	path = fpga-adc
-	url = git@github.com:/mattvenn/fpga-adc
+	url = git@github.com:mattvenn/fpga-adc
 [submodule "bbb-r2rdac"]
 	path = bbb-r2rdac
-	url = git@github.com:/mattvenn/bbb-r2rdac
+	url = git@github.com:mattvenn/bbb-r2rdac
 [submodule "capture"]
 	path = capture
-	url = git@github.com:/mattvenn/capture
+	url = git@github.com:mattvenn/capture
