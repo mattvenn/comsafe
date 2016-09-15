@@ -1,0 +1,184 @@
+reading from stdin
+starting
+hit started at 4529850 on channel 0 val 2077
+hit started at 4529850 on channel 1 val 2085
+hit ended at 4530171 on channel 0 val 2753
+hit ended at 4530171 on channel 1 val 2762
+hit started at 4530172 on channel 0 val 2752
+hit started at 4530172 on channel 1 val 2759
+hit ended at 4530493 on channel 0 val 2752
+hit ended at 4530493 on channel 1 val 2759
+hit started at 4530494 on channel 0 val 2752
+hit started at 4530494 on channel 1 val 2759
+hit ended at 4530815 on channel 0 val 2752
+hit ended at 4530815 on channel 1 val 2759
+hit started at 4530816 on channel 0 val 2752
+hit started at 4530816 on channel 1 val 2759
+hit ended at 4531137 on channel 0 val 2750
+hit ended at 4531137 on channel 1 val 2759
+hit started at 4531138 on channel 0 val 2753
+hit started at 4531138 on channel 1 val 2762
+hit ended at 4531459 on channel 0 val 2752
+hit ended at 4531459 on channel 1 val 2759
+hit started at 4531460 on channel 0 val 2752
+hit started at 4531460 on channel 1 val 2759
+hit ended at 4531781 on channel 0 val 2752
+hit ended at 4531781 on channel 1 val 2760
+hit started at 4531782 on channel 0 val 2752
+hit started at 4531782 on channel 1 val 2759
+hit ended at 4532103 on channel 0 val 2752
+hit ended at 4532103 on channel 1 val 2760
+hit started at 4532104 on channel 0 val 2749
+hit started at 4532104 on channel 1 val 2758
+hit ended at 4532425 on channel 0 val 2755
+hit ended at 4532425 on channel 1 val 2763
+hit started at 4532426 on channel 0 val 2753
+hit started at 4532426 on channel 1 val 2762
+hit ended at 4532747 on channel 0 val 2753
+hit ended at 4532747 on channel 1 val 2762
+hit started at 4532748 on channel 0 val 2753
+hit started at 4532748 on channel 1 val 2762
+hit ended at 4533049 on channel 0 val 1775
+hit ended at 4533049 on channel 1 val 1783
+finished reading 7831040 records
+found 20 hits:
+chan   0
+start  2.26492(s)
+end    2.26509(s)
+max    3.36141(v)
+len    160.5(us)
+integ  538.337(uVs)
+cutoff 1
+chan   1
+start  2.26492(s)
+end    2.26509(s)
+max    3.37362(v)
+len    160.5(us)
+integ  539.907(uVs)
+cutoff 1
+chan   0
+start  2.26509(s)
+end    2.26525(s)
+max    3.36386(v)
+len    160.5(us)
+integ  539.267(uVs)
+cutoff 1
+chan   1
+start  2.26509(s)
+end    2.26525(s)
+max    3.37362(v)
+len    160.5(us)
+integ  540.852(uVs)
+cutoff 1
+chan   0
+start  2.26525(s)
+end    2.26541(s)
+max    3.36386(v)
+len    160.5(us)
+integ  539.336(uVs)
+cutoff 1
+chan   1
+start  2.26525(s)
+end    2.26541(s)
+max    3.37362(v)
+len    160.5(us)
+integ  540.865(uVs)
+cutoff 1
+chan   0
+start  2.26541(s)
+end    2.26557(s)
+max    3.36141(v)
+len    160.5(us)
+integ  539.187(uVs)
+cutoff 1
+chan   1
+start  2.26541(s)
+end    2.26557(s)
+max    3.3724(v)
+len    160.5(us)
+integ  540.782(uVs)
+cutoff 1
+chan   0
+start  2.26557(s)
+end    2.26573(s)
+max    3.36141(v)
+len    160.5(us)
+integ  539.241(uVs)
+cutoff 1
+chan   1
+start  2.26557(s)
+end    2.26573(s)
+max    3.37362(v)
+len    160.5(us)
+integ  540.789(uVs)
+cutoff 1
+chan   0
+start  2.26573(s)
+end    2.26589(s)
+max    3.36386(v)
+len    160.5(us)
+integ  539.338(uVs)
+cutoff 1
+chan   1
+start  2.26573(s)
+end    2.26589(s)
+max    3.37362(v)
+len    160.5(us)
+integ  540.816(uVs)
+cutoff 1
+chan   0
+start  2.26589(s)
+end    2.26605(s)
+max    3.36141(v)
+len    160.5(us)
+integ  539.3(uVs)
+cutoff 1
+chan   1
+start  2.26589(s)
+end    2.26605(s)
+max    3.37362(v)
+len    160.5(us)
+integ  540.854(uVs)
+cutoff 1
+chan   0
+start  2.26605(s)
+end    2.26621(s)
+max    3.36386(v)
+len    160.5(us)
+integ  539.341(uVs)
+cutoff 1
+chan   1
+start  2.26605(s)
+end    2.26621(s)
+max    3.37362(v)
+len    160.5(us)
+integ  540.98(uVs)
+cutoff 1
+chan   0
+start  2.26621(s)
+end    2.26637(s)
+max    3.36141(v)
+len    160.5(us)
+integ  539.329(uVs)
+cutoff 1
+chan   1
+start  2.26621(s)
+end    2.26637(s)
+max    3.3724(v)
+len    160.5(us)
+integ  540.898(uVs)
+cutoff 1
+chan   0
+start  2.26637(s)
+end    2.26652(s)
+max    3.36386(v)
+len    150.5(us)
+integ  503.832(uVs)
+cutoff 0
+chan   1
+start  2.26637(s)
+end    2.26652(s)
+max    3.37362(v)
+len    150.5(us)
+integ  505.357(uVs)
+cutoff 0
