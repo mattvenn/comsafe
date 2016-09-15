@@ -21,7 +21,7 @@ load_data loads the data file into the DAC and is captured
 by calibrated Tektronix MSO2004B scope and the both channels of the hit-capture
 system.
 
-[scope](TEK00010.PNG)
+![scope](TEK00010.PNG)
 
 load_data was run on a cronjob every minute during the 10 hour test run,
 resulting in 860 hits on each channel.
