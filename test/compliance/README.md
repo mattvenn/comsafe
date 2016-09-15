@@ -2,32 +2,43 @@
 
 test was run for 10 hours
 
-## hit generation
+## hit-generator system
 
-generate_hit.py from [bbb-r2rdac](https://github.com/mattvenn/bbb-r2rdac) used for generating hits
+hits were generated using [bbb-r2rdac](https://github.com/mattvenn/bbb-r2rdac/tree/8900fd66a06b4343b700554c99f5f4efe2ae75f2)
+on the hit-generator beaglebone black.
 
-./generate_hit.py --hit-max 3000 --hit-len 100 --hit-slope 100 
+generate_hit.py was used for generating hits:
 
-creates the [data](data.txt) file with following characteristics:
+    ./generate_hit.py --hit-max 3000 --hit-len 100 --hit-slope 100 
+
+which creates the [data](data.txt) file with following characteristics:
 
 * 3v max hit voltage 
 * hit len between start of rise and start of fall is 100uS
 * slope of rise and fall is 100uV/uS
 
-load_data from bbb-r2rdac loads the data file into the DAC and is captured
-by calibrated Tektronix MSO2004B scope and the fpga-adc.
+load_data loads the data file into the DAC and is captured
+by calibrated Tektronix MSO2004B scope and the both channels of the hit-capture
+system.
 
 [scope](TEK00010.PNG)
 
-load_data was run on a cronjob every minute.
+load_data was run on a cronjob every minute during the 10 hour test run,
+resulting in 860 hits on each channel.
 
-## hit capture
+## hit-capture system
 
-On the [fpga-adc](https://github.com/mattvenn/fpga-adc) system this command was run:
+hits were captured using on the hit-capture beaglebone black.
+ 
+* logibone FPGA shield was configured with [fpga-adc](https://github.com/mattvenn/fpga-adc/tree/43fa6abc2e7af1f5b5c5d68da284941eccf0d3e9)
+* data captured with [capture](https://github.com/mattvenn/capture/tree/fc69d9047c36403417c285fe721533ce0d8ae468) 
+* hits processed with [hit-proc](https://github.com/mattvenn/hit-proc/tree/d541fad01290cc5b6146e4193b7e0fa5c65e3fa1)
 
-while true; do date >> hits; ./capture -n 600000000 | ./a.out -b 1024 -s 1000 -e 500  >> hits; done
+This command was run to capture and process the hits in a pipeline:
 
-This command runs a loop that captures 5 minutes of samples and  pipes them to the hit processor.
+    while true; do date >> hits; ./capture -n 600000000 | ../hit-proc/hit-proc -b 1024 -s 1000 -e 500  >> hits; done
+
+This runs a loop that captures 5 minutes of samples and pipes them to the hit processor.
 Hit processor arguments:
 
 * start threshold of 1000 (1.22v)
