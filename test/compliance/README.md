@@ -4,7 +4,7 @@ test was run for 10 hours
 
 ## hit generation
 
-[generate_hit.py](../../bbb-r2rdac/prussC/generate_hit.py) used for generating hits
+generate_hit.py from [bbb-r2rdac](https://github.com/mattvenn/bbb-r2rdac) used for generating hits
 
 ./generate_hit.py --hit-max 3000 --hit-len 100 --hit-slope 100 
 
@@ -14,7 +14,7 @@ creates the [data](data.txt) file with following characteristics:
 * hit len between start of rise and start of fall is 100uS
 * slope of rise and fall is 100uV/uS
 
-[load_data](../../bbb-r2rdac/src/load_data.c) loads the data file into the DAC and is captured
+load_data from bbb-r2rdac loads the data file into the DAC and is captured
 by calibrated Tektronix MSO2004B scope and the fpga-adc.
 
 [scope](TEK00010.PNG)
@@ -23,7 +23,7 @@ load_data was run on a cronjob every minute.
 
 ## hit capture
 
-On the fpga-adc system this command was run:
+On the [fpga-adc](https://github.com/mattvenn/fpga-adc) system this command was run:
 
 while true; do date >> hits; ./capture -n 600000000 | ./a.out -b 1024 -s 1000 -e 500  >> hits; done
 
