@@ -11,7 +11,7 @@ generate_hit.py was used for generating hits:
 
     ./generate_hit.py --hit-max 3000 --hit-len 100 --hit-slope 100 
 
-which creates the [data](data.txt) file with following characteristics:
+which creates the [data](16-09-15-results/data.txt) file with following characteristics:
 
 * 3v max hit voltage 
 * hit len between start of rise and start of fall is 100uS
@@ -46,9 +46,9 @@ Hit processor arguments:
 * channel zeros both set to 0
 * process data in 1024 sample size chunks
 
-Screen was used to capture the session [screenlog.0](screenlog.0)
+Screen was used to capture the session [screenlog.0](16-09-15-results/screenlog.0)
 
-results were captured in the [hits](hits) file.
+results were captured in the [hits](16-09-16-results/hits) file.
 
 # tests
 
@@ -123,4 +123,5 @@ so expected hits = 172 * 5 * 2 = 1720
 
 ## linux stability
 
-captured all kernel log messages during the test to [screenlog.1](screenlog.1), which shows no messages logged during the test.
+captured all kernel log messages during the test to
+[screenlog.1](16-09-15-results/screenlog.1), which shows no messages logged during the test.
